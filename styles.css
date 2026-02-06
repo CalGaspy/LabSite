@@ -188,8 +188,8 @@
 /* Member photo */
 .member-card img {
     width: 100%;
-    height: 240px;          /* fixed height */
-    object-fit: cover;      /* crop, don't stretch */
+    height: 500px;         
+    object-fit: cover;      
     display: block;
 }
 
