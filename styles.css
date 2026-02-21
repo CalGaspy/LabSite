@@ -198,9 +198,19 @@
 .member-name {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #9D2235;
     margin-bottom: 4px;
     text-align: center;
+}
+
+/* The actual clickable link */
+.member-name a {
+    text-decoration: none;
+    color: #9D2235;  /* UNLV scarlet */
+}
+
+/* Hover effect */
+.member-name a:hover {
+    text-decoration: underline;
 }
 
 /* Member role / title */
@@ -233,6 +243,205 @@
     }
 }
 
+/* memebers tabs */ 
+
+.profile {
+    padding: 80px 40px;
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.profile-sidebar img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.profile-sidebar h1 {
+    font-size: 1.6rem;
+    color: #9D2235;
+    margin-bottom: 6px;
+}
+
+.profile-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.profile-department {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.profile-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.profile-links a {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+}
+
+.profile-links a:hover {
+    border-color: #9D2235;
+    color: #9D2235;
+}
 
 
+.profile-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
 
+.profile-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.profile-content ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Contact Page with Background
+========================= */
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;              /* enables centering */
+    align-items: center;        /* vertical center */
+    justify-content: center;    /* horizontal center */
+
+    padding: 40px;
+
+    background-image: url("media/WhiteDronePhoto.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* White tint overlay */
+.contact-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* Content container */
+.contact-container {
+    position: relative;
+    z-index: 1;
+
+    max-width: 800px;
+    text-align: center;   /* center all text */
+}
+
+.contact h1 {
+    font-size: 2.2rem;
+    color: #9D2235;
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-info {
+    display: grid;
+    gap: 30px;
+}
+
+.contact-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.contact-block p {
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.contact-block a {
+    text-decoration: none;
+    color: #9D2235;
+}
+
+.contact-block a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Gallery Page
+========================= */
+
+.gallery {
+    padding: 100px 40px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery h1 {
+    font-size: 2.2rem;
+    color: #9D2235;
+    margin-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 400px;           /* Fixed height for consistency */
+    object-fit: cover;       /* Keeps images proportional */
+    border-radius: 6px;
+}
+
+.gallery-caption {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+.gallery-item video {
+    width: 100%;
+    height: 400px;        /* Same height as images */
+    object-fit: cover;
+    border-radius: 6px;
+}
